@@ -91,7 +91,7 @@ The tool automatically detects the following AD CS vulnerabilities:
 
 - **Certipy**: https://github.com/ly4k/Certipy
 - SpecterOps for AD CS research
-- Dominic Sir, Matt Johnson bhai ji, Zero cool, Code Breaker ICA, Indishell Crew
+- Dominic Sir, Matt Johnson bhai ji, PWS, Daniil, Dylan, Zero cool, Code Breaker ICA, Indishell Crew
 - Ashwath, Andy, Marcus and Soroush sir
 - RGO members: Konsta, Noman, Owais, Sina, Aleseendro, Samarth, Roshan
 - Partner in crime: Karan and Manoj
