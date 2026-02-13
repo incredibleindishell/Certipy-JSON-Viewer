@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project_name }} - Certipy Viewer{% endblock %}
+
+{% block content %}
+
+<div align="center">
+    {{ output|safe }}
+</div>
+
+<div align="center">
+    <br/><br/>
+    <a href="{{ url_for('view_projects') }}" class="btn">← Back to Projects</a>
+    
+    <form method="POST" 
+          action="{{ url_for('delete_project', project_name=project_name) }}" 
+          style="display: inline;"
+          onsubmit="return confirm('Are you sure you want to delete this project? This action cannot be undone.');">
+        <button type="submit" class="btn btn-danger">Delete This Project</button>
+    </form>
+    
+    <br/><br/>
+</div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}View Projects - Certipy Viewer{% endblock %}
+
+{% block content %}
+<div class="header">
+    <font color="#ff9933" size="5"><b>All Projects</b></font>
+</div>
+
+{% if projects %}
+    <div style="text-align: center; margin: 20px;">
+        <font color="#db996e">Total projects: {{ projects|length }}</font>
+    </div>
+
+    <div class="project-list">
+        {% for project in projects %}
+        <div class="project-item">
+            <div>
+                <span class="project-name">{{ project.project_name }}</span>
+                <br/>
+                <small style="color: #666;">Uploaded: {{ project.created_at }}</small>
+            </div>
+            <div>
+                <a href="{{ url_for('view_project', project_name=project.project_name) }}" 
+                   class="btn">
+                    View Analysis
+                </a>
+                <form method="POST" 
+                      action="{{ url_for('delete_project', project_name=project.project_name) }}" 
+                      style="display: inline;"
+                      onsubmit="return confirm('Are you sure you want to delete project \'{{ project.project_name }}\'?');">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div align="center" style="padding: 60px 20px; background-color: #1a1a1a; border: 1px solid #333; margin-top: 30px;">
+        <p style="color: #db996e; font-size: 18px; margin-bottom: 20px;">
+            No projects found
+        </p>
+        <p style="color: #666;">
+            Upload your first Certipy JSON file to get started
+        </p>
+        <div style="margin-top: 30px;">
+            <a href="{{ url_for('upload_project') }}" class="btn" style="font-size: 16px; padding: 15px 30px;">Upload Project</a>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}

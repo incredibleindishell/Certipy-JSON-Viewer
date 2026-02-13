@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Project - Certipy Viewer{% endblock %}
+
+{% block content %}
+<div class="header">
+    <font color="#ff9933" size="5"><b>Upload Certipy JSON File</b></font>
+</div>
+
+<div align="center" style="margin-top: 10px;">
+    <form method="POST" enctype="multipart/form-data" id="uploadForm">
+        <div class="form-row">
+            <label for="project_name">Project Name:</label><br/>
+            <input type="text" 
+                   id="project_name" 
+                   name="project_name" 
+                   placeholder="e.g., CompanyName-2024-02" 
+                   required>
+            <br/>
+            <small style="color: #666; display: block; margin-top: 5px;">
+                Choose a descriptive name for this assessment
+            </small>
+        </div>
+
+        <div class="form-row">
+            <label for="json_file">Certipy JSON File:</label><br/>
+            <input type="file" 
+                   id="json_file" 
+                   name="json_file" 
+                   accept=".json" 
+                   required>
+            <br/>
+            <small style="color: #666; display: block; margin-top: 5px;">
+                Upload the JSON output from Certipy's certificate enumeration
+            </small>
+        </div>
+
+        <div class="form-row">
+            <input type="submit" value="Upload Project">
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function(e) {
+        const projectName = document.getElementById('project_name').value.trim();
+        const fileInput = document.getElementById('json_file');
+        
+        if (!projectName) {
+            e.preventDefault();
+            alert('Please enter a project name');
+            return;
+        }
+        
+        if (!fileInput.files.length) {
+            e.preventDefault();
+            alert('Please select a JSON file');
+            return;
+        }
+    });
+</script>
+{% endblock %}
