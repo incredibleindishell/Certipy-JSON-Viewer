@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Certipy Viewer{% endblock %}</title>
+    <style>
+        body {
+            font-size: 14px;
+            font-family: monospace;
+            color: #db996e;
+            background: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        textarea {
+            border: solid 1px;
+            border-color: #666;
+            background-color: #1a1a1a;
+            font: 10pt monospace;
+            color: #00ff00;
+            padding: 10px;
+            width: 90%;
+            height: 200px;
+        }
+
+        input[type='text'] {
+            border: solid 1px;
+            border-color: #666;
+            background-color: #444444;
+            font: 10pt Verdana;
+            color: white;
+            padding: 8px;
+            width: 400px;
+        }
+
+        input[type='file'] {
+            border: solid 1px;
+            border-color: #666;
+            background-color: #444444;
+            font: 10pt Verdana;
+            color: white;
+            padding: 8px;
+            width: 400px;
+        }
+
+        select {
+            border: solid 1px;
+            border-color: #666;
+            background-color: #444444;
+            font: 10pt Verdana;
+            color: white;
+            padding: 8px;
+            width: 400px;
+        }
+
+        input[type='submit'], input[type='button'], button, .btn {
+            color: White;
+            border: none;
+            background-color: black;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #666;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        input[type='submit']:hover, input[type='button']:hover, button:hover, .btn:hover {
+            background-color: #ff9933;
+            color: black;
+        }
+
+        .btn-danger {
+            background-color: #8b0000;
+        }
+
+        .btn-danger:hover {
+            background-color: #ff0000;
+        }
+
+        tr {
+            border: solid 1px #333;
+            color: #FFF;
+        }
+
+        td, th {
+            border: solid 1px #333;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #333;
+            color: #ff9933;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: #191919;
+            color: #FFF;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        label {
+            color: #db996e;
+            font-weight: bold;
+        }
+
+        .output {
+            color: #00ff00;
+            margin-top: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .form-row {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+       .nav {
+            background-color: transparent;
+            padding: 10px;
+            margin: 10px 0 5px 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #ff9933;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border: 1px solid #666;
+            display: inline-block;
+        }
+
+        .nav a:hover {
+            background-color: #ff9933;
+            color: black;
+        }
+
+        .nav a:hover {
+            background-color: #ff9933;
+            color: black;
+        }
+
+        .flash-messages {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .flash {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .flash.success {
+            background-color: #1a4d1a;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+        }
+
+        .flash.error {
+            background-color: #4d1a1a;
+            border: 1px solid #ff0000;
+            color: #ff6666;
+        }
+
+        .project-list {
+            background-color: #1a1a1a;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #333;
+        }
+
+        .project-item {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #0a0a0a;
+            border: 1px solid #444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-item:hover {
+            border-color: #ff9933;
+        }
+
+        .project-name {
+            color: #00ff00;
+            font-weight: bold;
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+	<div class="header">
+    <font color="#ff9933" size="6" face="comic sans ms"><b>--==[[ Certipy JSON Viewer ]]==--</b></font>
+    <br/>
+    <font color="white" size="2">Parse and analyze Certipy certificate enumeration results</font>
+    <br/><br/>
+    <font color="#ff9933">##########################################</font><font color="white">#############################################</font><font color="green">#############################################</font>
+</div>
+
+    <div class="nav">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('upload_project') }}">Upload Project</a>
+        <a href="{{ url_for('view_projects') }}">View Projects</a>
+    </div>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </div>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
