@@ -93,5 +93,5 @@ The tool automatically detects the following AD CS vulnerabilities:
 - SpecterOps for AD CS research
 - Dominic Sir, Matt Johnson bhai ji, PWS, Daniil, Dylan, Zero cool, Code Breaker ICA, Indishell Crew
 - Ashwath, Andy, Marcus and Soroush sir
-- RGO members: Konsta, Noman, Owais, Sina, Aleseendro, Samarth, Roshan
+- RGO members: Konsta, Noman, Owais, Etizaz, Sina, Aleseendro, Samarth, Roshan
 - Partner in crime: Karan and Manoj
