@@ -1,0 +1,2283 @@
+{
+  "Certificate Authorities": {
+    "0": {
+      "CA Name": "queen-WINBOX2-CA",
+      "DNS Name": "winbox2.queen.indishell.lab",
+      "Certificate Subject": "CN=queen-WINBOX2-CA, DC=queen, DC=indishell, DC=lab",
+      "Certificate Serial Number": "4B1404DF5F0E17904F333F4CFA25FDD1",
+      "Certificate Validity Start": "2025-06-07 00:04:57+00:00",
+      "Certificate Validity End": "2030-06-07 00:14:54+00:00",
+      "Web Enrollment": {
+        "http": {
+          "enabled": true
+        },
+        "https": {
+          "enabled": true,
+          "channel_binding": false
+        }
+      },
+      "User Specified SAN": "Disabled",
+      "Request Disposition": "Issue",
+      "Enforce Encryption for Requests": "Enabled",
+      "Active Policy": "CertificateAuthority_MicrosoftDefault.Policy",
+      "Permissions": {
+        "Owner": "QUEEN.INDISHELL.LAB\\Administrators",
+        "Access Rights": {
+          "1": [
+            "QUEEN.INDISHELL.LAB\\Administrators",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "2": [
+            "QUEEN.INDISHELL.LAB\\Administrators",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "512": [
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ]
+        }
+      },
+      "[!] Vulnerabilities": {
+        "ESC8": "Web Enrollment is enabled over HTTP and HTTPS, and Channel Binding is disabled."
+      }
+    }
+  },
+  "Certificate Templates": {
+    "0": {
+      "Template Name": "esc16",
+      "Display Name": "esc16",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Server Authentication",
+        "Certificate Request Agent",
+        "Any Purpose"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2026-02-08 10:17:48+00:00",
+      "Template Last Modified": "2026-02-08 10:19:10+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Administrator",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Domain Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC1": "Enrollee supplies subject and template allows client authentication.",
+        "ESC2": "Template can be used for any purpose.",
+        "ESC3": "Template has Certificate Request Agent EKU set."
+      }
+    },
+    "1": {
+      "Template Name": "esc1",
+      "Display Name": "esc1",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Server Authentication",
+        "Client Authentication",
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2026-02-08 09:42:00+00:00",
+      "Template Last Modified": "2026-02-08 09:55:43+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\b0x1",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Administrator",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "2": {
+      "Template Name": "Copy of User",
+      "Display Name": "Copy of User",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        67108864,
+        536870912,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Secure Email",
+        "Encrypting File System"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2026-02-08 09:31:06+00:00",
+      "Template Last Modified": "2026-02-08 09:31:07+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Administrator",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Authenticated Users",
+        "QUEEN.INDISHELL.LAB\\Domain Users"
+      ],
+      "[+] User ACL Principals": [
+        "QUEEN.INDISHELL.LAB\\Authenticated Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC4": "User has dangerous permissions."
+      }
+    },
+    "3": {
+      "Template Name": "server_auth",
+      "Display Name": "server_auth",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2026-01-05 09:53:30+00:00",
+      "Template Last Modified": "2026-02-08 09:26:04+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Administrator",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Authenticated Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC1": "Enrollee supplies subject and template allows client authentication."
+      }
+    },
+    "4": {
+      "Template Name": "KerberosAuthentication",
+      "Display Name": "Kerberos Authentication",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        4194304,
+        134217728
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication",
+        "Smart Card Logon",
+        "KDC Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Enterprise Read-only Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ],
+          "Write Property AutoEnroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        }
+      }
+    },
+    "5": {
+      "Template Name": "OCSPResponseSigning",
+      "Display Name": "OCSP Response Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728,
+        268435456
+      ],
+      "Enrollment Flag": [
+        4096,
+        16384
+      ],
+      "Extended Key Usage": [
+        "OCSP Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "RA Application Policies": [
+        "msPKI-Asymmetric-Algorithm`PZPWSTR`RSA`msPKI-Hash-Algorithm`PZPWSTR`SHA1`msPKI-Key-Security-Descriptor`PZPWSTR`D:P(A;;FA;;;BA)(A;;FA;;;SY)(A;;GR;;;S-1-5-80-3804348527-3718992918-2141599610-3686422417-2726379419)`msPKI-Key-Usage`DWORD`2`"
+      ],
+      "Authorized Signatures Required": 0,
+      "Schema Version": 3,
+      "Validity Period": "2 weeks",
+      "Renewal Period": "2 days",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "6": {
+      "Template Name": "RASAndIASServer",
+      "Display Name": "RAS and IAS Server",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728,
+        1073741824
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\RAS and IAS Servers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\RAS and IAS Servers"
+          ]
+        }
+      }
+    },
+    "7": {
+      "Template Name": "Workstation",
+      "Display Name": "Workstation Authentication",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "8": {
+      "Template Name": "DirectoryEmailReplication",
+      "Display Name": "Directory Email Replication",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        16777216,
+        134217728
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Extended Key Usage": [
+        "Directory Service Email Replication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Enterprise Read-only Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ],
+          "Write Property AutoEnroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        }
+      }
+    },
+    "9": {
+      "Template Name": "DomainControllerAuthentication",
+      "Display Name": "Domain Controller Authentication",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:01+00:00",
+      "Template Last Modified": "2025-06-07 00:15:01+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Enterprise Read-only Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ],
+          "Write Property AutoEnroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        }
+      }
+    },
+    "10": {
+      "Template Name": "KeyRecoveryAgent",
+      "Display Name": "Key Recovery Agent",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Key Recovery Agent"
+      ],
+      "Requires Manager Approval": true,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "11": {
+      "Template Name": "CAExchange",
+      "Display Name": "CA Exchange",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Enrollment Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Private Key Archival"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "1 week",
+      "Renewal Period": "1 day",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "12": {
+      "Template Name": "CrossCA",
+      "Display Name": "Cross Certification Authority",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Enrollment Flag": [
+        8
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "RA Application Policies": [
+        "Qualified Subordination"
+      ],
+      "Authorized Signatures Required": 1,
+      "Schema Version": 2,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "13": {
+      "Template Name": "ExchangeUserSignature",
+      "Display Name": "Exchange Signature Only",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Secure Email"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "14": {
+      "Template Name": "ExchangeUser",
+      "Display Name": "Exchange User",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Enrollment Flag": [
+        1
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Secure Email"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "15": {
+      "Template Name": "CEPEncryption",
+      "Display Name": "CEP Encryption",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "16": {
+      "Template Name": "OfflineRouter",
+      "Display Name": "Router (Offline request)",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "17": {
+      "Template Name": "IPSECIntermediateOffline",
+      "Display Name": "IPSec (Offline request)",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "IP security IKE intermediate"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2026-01-02 08:16:43+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\b0x1"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "18": {
+      "Template Name": "IPSECIntermediateOnline",
+      "Display Name": "IPSec",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728,
+        268435456
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "IP security IKE intermediate"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "19": {
+      "Template Name": "SubCA",
+      "Display Name": "Subordinate Certification Authority",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "20": {
+      "Template Name": "CA",
+      "Display Name": "Root Certification Authority",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "21": {
+      "Template Name": "WebServer",
+      "Display Name": "Web Server",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2026-02-08 09:30:39+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Authenticated Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC15": "Enrollee supplies subject and schema version is 1."
+      },
+      "[*] Remarks": {
+        "ESC15": "Only applicable if the environment has not been patched. See CVE-2024-49019 or the wiki for more details."
+      }
+    },
+    "22": {
+      "Template Name": "DomainController",
+      "Display Name": "Domain Controller",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        16777216,
+        134217728,
+        268435456
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Enterprise Read-only Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Controllers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Domain Controllers"
+          ]
+        }
+      }
+    },
+    "23": {
+      "Template Name": "Machine",
+      "Display Name": "Computer",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728,
+        268435456
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2026-02-07 11:45:09+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Computers",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Domain Computers"
+      ],
+      "[*] Remarks": {
+        "ESC2 Target Template": "Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.",
+        "ESC3 Target Template": "Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1."
+      }
+    },
+    "24": {
+      "Template Name": "MachineEnrollmentAgent",
+      "Display Name": "Enrollment Agent (Computer)",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        134217728,
+        268435456
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "25": {
+      "Template Name": "EnrollmentAgentOffline",
+      "Display Name": "Exchange Enrollment Agent (Offline request)",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "26": {
+      "Template Name": "EnrollmentAgent",
+      "Display Name": "Enrollment Agent",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2026-02-08 09:31:47+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+            "QUEEN.INDISHELL.LAB\\Authenticated Users"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Authenticated Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC3": "Template has Certificate Request Agent EKU set."
+      }
+    },
+    "27": {
+      "Template Name": "CTLSigning",
+      "Display Name": "Trust List Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Microsoft Trust List Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "28": {
+      "Template Name": "CodeSigning",
+      "Display Name": "Code Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Code Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "29": {
+      "Template Name": "EFSRecovery",
+      "Display Name": "EFS Recovery Agent",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "File Recovery"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "30": {
+      "Template Name": "Administrator",
+      "Display Name": "Administrator",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        67108864,
+        536870912,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Microsoft Trust List Signing",
+        "Encrypting File System",
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "31": {
+      "Template Name": "EFS",
+      "Display Name": "Basic EFS",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Encrypting File System"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Domain Users"
+      ]
+    },
+    "32": {
+      "Template Name": "SmartcardLogon",
+      "Display Name": "Smartcard Logon",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "33": {
+      "Template Name": "ClientAuth",
+      "Display Name": "Authenticated Session",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "34": {
+      "Template Name": "SmartcardUser",
+      "Display Name": "Smartcard User",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        67108864,
+        536870912,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        8
+      ],
+      "Extended Key Usage": [
+        "Secure Email",
+        "Client Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "35": {
+      "Template Name": "UserSignature",
+      "Display Name": "User Signature Only",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        67108864,
+        536870912,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        32
+      ],
+      "Extended Key Usage": [
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "36": {
+      "Template Name": "User",
+      "Display Name": "User",
+      "Certificate Authorities": [
+        "queen-WINBOX2-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        33554432,
+        67108864,
+        536870912,
+        2147483648
+      ],
+      "Enrollment Flag": [
+        1,
+        8,
+        32
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Encrypting File System",
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 1,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2025-06-07 00:15:00+00:00",
+      "Template Last Modified": "2025-06-07 00:15:00+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "QUEEN.INDISHELL.LAB\\Enterprise Admins",
+          "Full Control Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "QUEEN.INDISHELL.LAB\\Domain Admins",
+            "QUEEN.INDISHELL.LAB\\Domain Users",
+            "QUEEN.INDISHELL.LAB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "QUEEN.INDISHELL.LAB\\Domain Users"
+      ],
+      "[*] Remarks": {
+        "ESC2 Target Template": "Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.",
+        "ESC3 Target Template": "Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1."
+      }
+    }
+  }
+}
